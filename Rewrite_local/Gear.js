@@ -1,8 +1,10 @@
 /*
 # Gear解锁订阅
-^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body Gear.js
+^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt url script-response-body Gear.js
+
 [mitm]
-hostname = buy.itunes.apple.com,*/
+hostname = buy.itunes.apple.com,
+*/
 
 let obj = JSON.parse($response.body);
 obj = {
