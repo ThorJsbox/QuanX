@@ -14,4 +14,4 @@ Netease Music13 = http,aimer.one,2333
 Netease Music14 = http,120.55.164.155,19980
 Netease Music15 = http,95.179.198.172,19980
 Netease Music16 = Shadowsocks,music.desperadoj.com,30003,aes-128-gcm,"desperadoj.com_free_proxy_emx2"
-Netease Music17 = Shadowsocks,proxy.plusmedia.site,58081,method=rc4-md5,"password=ieG9l1nte5eo7IBZas84jLi"
+Netease Music17 = Shadowsocks,proxy.plusmedia.site,58081,rc4-md5,"password=ieG9l1nte5eo7IBZas84jLi"
