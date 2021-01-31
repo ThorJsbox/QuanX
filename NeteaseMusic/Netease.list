@@ -13,3 +13,4 @@
 𝐌𝐮𝐬𝐢𝐜12 = http,120.55.164.155,19980
 𝐌𝐮𝐬𝐢𝐜13 = http,95.179.198.172,19980
 𝐌𝐮𝐬𝐢𝐜14 = Shadowsocks,music.desperadoj.com,30003,aes-128-gcm,"desperadoj.com_free_proxy_emx2"
+𝐌𝐮𝐬𝐢𝐜15 = shadowsocks,proxy.plusmedia.site,58081,method=rc4-md5,"password=ieG9l1nte5eo7IBZas84jLi"
