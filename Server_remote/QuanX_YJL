@@ -1,3 +1,5 @@
+shadowsocks=42.157.196.103:10636, method= aes-256-cfb, password=Yk4UdrOyQg, ssr-protocol= auth_aes128_md5, ssr-protocol-param=23465:VDltHgcXGz, obfs= tls1.2_ticket_auth, obfs-host= ajax.microsoft.com, tag=香港01
+shadowsocks=dg-hk-node02.linkthink.app:12293, method= aes-256-cfb, password=e5opjuLDEQ, ssr-protocol= auth_aes128_md5, ssr-protocol-param=23465:VDltHgcXGz, obfs= tls1.2_ticket_auth, obfs-host= ajax.microsoft.com, tag=香港02
 http=a1.ap.fastqvpn.com:29980, username=404641112670601216, password=2ebcb6a0-432c-492a-899a-a5fb4bf4d23d, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速A1
 http=a2.ap.fastqvpn.com:29980, username=404641112670601216, password=2ebcb6a0-432c-492a-899a-a5fb4bf4d23d, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速A2
 http=a3.ap.fastqvpn.com:29980, username=404641112670601216, password=2ebcb6a0-432c-492a-899a-a5fb4bf4d23d, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速A3
