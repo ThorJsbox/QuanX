@@ -1,3 +1,4 @@
+http=gp.mail.qq.com:443, username=secondaccount, password=secondpassword@123, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=香港01
 http=a1.ap.fastqvpn.com:29980, username=404641112670601216, password=2ebcb6a0-432c-492a-899a-a5fb4bf4d23d, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速A1
 http=a2.ap.fastqvpn.com:29980, username=404641112670601216, password=2ebcb6a0-432c-492a-899a-a5fb4bf4d23d, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速A2
 http=a3.ap.fastqvpn.com:29980, username=404641112670601216, password=2ebcb6a0-432c-492a-899a-a5fb4bf4d23d, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速A3
