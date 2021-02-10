@@ -10,9 +10,9 @@ Netease Music10 = http,music.griouges.cn,39000
 Netease Music11 = http,lolico.me,443
 Netease Music12 = http,music.lolico.me,39000
 Netease Music13 = http,block4music.poetyin.me,39000
-Netease Music14 = Shadowsocks,music.desperadoj.com,30003,method=aes-128-gcm,"password:desperadoj.com_free_proxy_vrfn"
-Netease Music15 = Shadowsocks,music.desperadoj.com,30003,method=aes-128-gcm,"password:desperadoj.com_free_proxy_x80j"
-Netease Music16 = Shadowsocks,music.desperadoj.com,30003,method=aes-128-gcm,"password:desperadoj.com_free_proxy_emx2"
+Netease Music14 = Shadowsocks,music.desperadoj.com,30003,aes-128-gcm,"password:desperadoj.com_free_proxy_vrfn"
+Netease Music15 = Shadowsocks,music.desperadoj.com,30003,aes-128-gcm,"password:desperadoj.com_free_proxy_x80j"
+Netease Music16 = Shadowsocks,music.desperadoj.com,30003,aes-128-gcm,"password:desperadoj.com_free_proxy_emx2"
 Netease Music17 = Shadowsocks,proxy.plusmedia.site,58080,rc4-md5,"password:ieG9l1nte5eo7IBZas84jLi"
 Netease Music18 = Shadowsocks,proxy.plusmedia.site,58081,rc4-md5,"password:ieG9l1nte5eo7IBZas84jLi"
 Netease Music19 = Shadowsocks,sdwan-a.getluffy.cloud,11000,rc4-md5,"password:b22Uqr"
