@@ -1,7 +1,3 @@
-ssr://NDIuMTU3LjE5Ni4xMDQ6MTAxNzc6YXV0aF9hZXMxMjhfbWQ1OmFlcy0yNTYtY2ZiOnRsczEuMl90aWNrZXRfYXV0aDpka050Y0RoQlRHbG9OZy8_cmVtYXJrcz01WS13NXJtLU1ERSZwcm90b3BhcmFtPU5qYzBPbEIxUWpSclNGbHRiR2smb2Jmc3BhcmFtPVlXcGhlQzV0YVdOeWIzTnZablF1WTI5dA
-ssr://ZGctaGstbm9kZTAyLmxpbmt0aGluay5hcHA6MTIzNTc6YXV0aF9hZXMxMjhfbWQ1OmFlcy0yNTYtY2ZiOnRsczEuMl90aWNrZXRfYXV0aDpaVFZ2Y0dwMVRFUkZVUS8_cmVtYXJrcz02YWFaNXJpdk1ESSZwcm90b3BhcmFtPU5qYzBPbEIxUWpSclNGbHRiR2smb2Jmc3BhcmFtPVlXcGhlQzV0YVdOeWIzTnZablF1WTI5dA
-ssr://NDIuMTU3LjE5Ni4xMDM6MTA2NzE6YXV0aF9hZXMxMjhfbWQ1OmFlcy0yNTYtY2ZiOnRsczEuMl90aWNrZXRfYXV0aDpXV3MwVldSeVQzbFJady8_cmVtYXJrcz02YWFaNXJpdk1ETSZwcm90b3BhcmFtPU5qYzBPbEIxUWpSclNGbHRiR2smb2Jmc3BhcmFtPVlXcGhlQzV0YVdOeWIzTnZablF1WTI5dA
-ssr://NDIuMTU3LjE5Ni4xMDQ6MjA1MDI6YXV0aF9hZXMxMjhfbWQ1OmFlcy0yNTYtY2ZiOmh0dHBfcG9zdDpRMWRUV25OalRHdHFaZy8_cmVtYXJrcz02YWFaNXJpdk1EUSZwcm90b3BhcmFtPU5qYzBPbEIxUWpSclNGbHRiR2smb2Jmc3BhcmFtPVlXcGhlQzV0YVdOeWIzTnZablF1WTI5dA
 http=a1.ap.fastqvpn.com:29980, username=404641112670601216, password=2ebcb6a0-432c-492a-899a-a5fb4bf4d23d, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速A1
 http=a2.ap.fastqvpn.com:29980, username=404641112670601216, password=2ebcb6a0-432c-492a-899a-a5fb4bf4d23d, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速A2
 http=a3.ap.fastqvpn.com:29980, username=404641112670601216, password=2ebcb6a0-432c-492a-899a-a5fb4bf4d23d, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速A3
@@ -27,8 +23,8 @@ http=a2.ap.fastqvpn.com:29980, username=289830219345297408, password=929d73d4-fb
 http=a3.ap.fastqvpn.com:29980, username=289830219345297408, password=929d73d4-fb27-43de-8e78-e1982d0a94e2, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C3
 http=a4.ap.fastqvpn.com:29980, username=289830219345297408, password=929d73d4-fb27-43de-8e78-e1982d0a94e2, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C4
 http=a1.er3.xyz:29980, username=289830219345297408, password=929d73d4-fb27-43de-8e78-e1982d0a94e2, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C5
-http=ap1-ge.er3.xyz:29984, username=289830219345297408, password=929d73d4-fb27-43de-8e78-e1982d0a94e2, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C6
-http=ap1-ca.er3.xyz:29983, username=289830219345297408, password=929d73d4-fb27-43de-8e78-e1982d0a94e2, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C7
-http=ap1-au.er3.xyz:29982, username=289830219345297408, password=929d73d4-fb27-43de-8e78-e1982d0a94e2, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C8
-http=a1.er3.xyz:29980, username=289830219345297408, password=929d73d4-fb27-43de-8e78-e1982d0a94e2, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C9
-http=a1.ap.fastqvpn.com:29980, username=289830219345297408, password=929d73d4-fb27-43de-8e78-e1982d0a94e2, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C10
+http=ap1-ge.er3.xyz:29984, username=414386856927428608, password=a1dd578f-fc18-4102-a237-0193ffc4fecf, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C6
+http=ap1-ca.er3.xyz:29983, username=414386856927428608, password=a1dd578f-fc18-4102-a237-0193ffc4fecf, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C7
+http=ap1-au.er3.xyz:29982, username=414386856927428608, password=a1dd578f-fc18-4102-a237-0193ffc4fecf, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C8
+http=a1.er3.xyz:29980, username=414386856927428608, password=a1dd578f-fc18-4102-a237-0193ffc4fecf, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C9
+http=a1.ap.fastqvpn.com:29980, username=414386856927428608, password=a1dd578f-fc18-4102-a237-0193ffc4fecf, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C10
