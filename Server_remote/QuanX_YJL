@@ -28,3 +28,13 @@ http=ap1-ca.er3.xyz:29983, username=414386856927428608, password=a1dd578f-fc18-4
 http=ap1-au.er3.xyz:29982, username=414386856927428608, password=a1dd578f-fc18-4102-a237-0193ffc4fecf, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C8
 http=a1.er3.xyz:29980, username=414386856927428608, password=a1dd578f-fc18-4102-a237-0193ffc4fecf, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C9
 http=a1.ap.fastqvpn.com:29980, username=414386856927428608, password=a1dd578f-fc18-4102-a237-0193ffc4fecf, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速C10
+http=a1.ap.fastqvpn.com:29980, username=416925204208418816, password=55842c8a-5251-4b54-a6ed-bbb7e917f9d9, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速E1
+http=a2.ap.fastqvpn.com:29980, username=416925204208418816, password=55842c8a-5251-4b54-a6ed-bbb7e917f9d9, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速E2
+http=a3.ap.fastqvpn.com:29980, username=416925204208418816, password=55842c8a-5251-4b54-a6ed-bbb7e917f9d9, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速E3
+http=a4.ap.fastqvpn.com:29980, username=416925204208418816, password=55842c8a-5251-4b54-a6ed-bbb7e917f9d9, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速E4
+http=a1.er3.xyz:29980, username=416925204208418816, password=55842c8a-5251-4b54-a6ed-bbb7e917f9d9, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速E5
+http=ap1-ge.er3.xyz:29984, username=416925204208418816, password=55842c8a-5251-4b54-a6ed-bbb7e917f9d9, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速E6
+http=ap1-ca.er3.xyz:29983, username=416925204208418816, password=55842c8a-5251-4b54-a6ed-bbb7e917f9d9, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速E7
+http=ap1-au.er3.xyz:29982, username=416925204208418816, password=55842c8a-5251-4b54-a6ed-bbb7e917f9d9, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速E8
+http=a1.er3.xyz:29980, username=416925204208418816, password=55842c8a-5251-4b54-a6ed-bbb7e917f9d9, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速E9
+http=a1.ap.fastqvpn.com:29980, username=416925204208418816, password=55842c8a-5251-4b54-a6ed-bbb7e917f9d9, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=高速E10
