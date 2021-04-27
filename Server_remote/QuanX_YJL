@@ -1,12 +1,12 @@
-http=a1.ap.fastqvpn.com:29980, username= 434857378211430400, password= 024b1d6f-4395-41c1-bf07-6c507bce8e2f, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-HK01
-http=a2.ap.fastqvpn.com:29980, username=434857378211430400, password= 024b1d6f-4395-41c1-bf07-6c507bce8e2f, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-HK02
-http=a3.ap.fastqvpn.com:29980, username=434857378211430400, password= 024b1d6f-4395-41c1-bf07-6c507bce8e2f, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-HK03
-http=a4.ap.fastqvpn.com:29980, username=434857378211430400, password= 024b1d6f-4395-41c1-bf07-6c507bce8e2f, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-HK04
-http=a1.er3.xyz:29980, username=434857378211430400, password= 024b1d6f-4395-41c1-bf07-6c507bce8e2f, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=一键连-HK05
-http=ap1-jp.er3.xyz:29985, username=434857378211430400, password= 024b1d6f-4395-41c1-bf07-6c507bce8e2f, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-JP01
-http=ap1-sg.er3.xyz:29986, username=434857378211430400, password= 024b1d6f-4395-41c1-bf07-6c507bce8e2f, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-SG01
-http=ap1-uk.er3.xyz:29987, username=434857378211430400, password= 024b1d6f-4395-41c1-bf07-6c507bce8e2f, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-FR01
-http=ap1-us.er3.xyz:29988, username=434857378211430400, password= 024b1d6f-4395-41c1-bf07-6c507bce8e2f, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-US01
-http=ap1-ge.er3.xyz:29984, username=434857378211430400, password= 024b1d6f-4395-41c1-bf07-6c507bce8e2f, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=一键连-US02
-http=ap1-ca.er3.xyz:29983, username= 434857378211430400, password= 024b1d6f-4395-41c1-bf07-6c507bce8e2f, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=一键连-US03
-http=ap1-au.er3.xyz:29982, username= 434857378211430400, password= 024b1d6f-4395-41c1-bf07-6c507bce8e2f, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=一键连-US04
+http=a1.ap.fastqvpn.com:29980, username=439463750769049600, password= e57ae7c1-b217-4f21-84e0-4900bf7ac792, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-HK01
+http=a2.ap.fastqvpn.com:29980, username=439463750769049600, password= e57ae7c1-b217-4f21-84e0-4900bf7ac792, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-HK02
+http=a3.ap.fastqvpn.com:29980, username=439463750769049600, password= e57ae7c1-b217-4f21-84e0-4900bf7ac792, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-HK03
+http=a4.ap.fastqvpn.com:29980, username=439463750769049600, password= e57ae7c1-b217-4f21-84e0-4900bf7ac792, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-HK04
+http=a1.er3.xyz:29980, username=439463750769049600, password= e57ae7c1-b217-4f21-84e0-4900bf7ac792, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=一键连-HK05
+http=ap1-jp.er3.xyz:29985, username=439463750769049600, password= e57ae7c1-b217-4f21-84e0-4900bf7ac792, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-JP01
+http=ap1-sg.er3.xyz:29986, username=439463750769049600, password= e57ae7c1-b217-4f21-84e0-4900bf7ac792, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-SG01
+http=ap1-uk.er3.xyz:29987, username=439463750769049600, password= e57ae7c1-b217-4f21-84e0-4900bf7ac792, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-FR01
+http=ap1-us.er3.xyz:29988, username=439463750769049600, password= e57ae7c1-b217-4f21-84e0-4900bf7ac792, over-tls=true, tls-verification=false,fast-open=false, udp-relay=false, tag=一键连-US01
+http=ap1-ge.er3.xyz:29984, username=439463750769049600, password= e57ae7c1-b217-4f21-84e0-4900bf7ac792, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=一键连-US02
+http=ap1-ca.er3.xyz:29983, username=439463750769049600, password= e57ae7c1-b217-4f21-84e0-4900bf7ac792, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=一键连-US03
+http=ap1-au.er3.xyz:29982, username=439463750769049600, password= e57ae7c1-b217-4f21-84e0-4900bf7ac792, over-tls=true, tls-verification=false, fast-open=false, udp-relay=false, tag=一键连-US04
