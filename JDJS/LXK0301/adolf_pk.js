@@ -1,5 +1,5 @@
 /*
-京享值PK
+京享值PK 
 活动地址：京东app-搜索 京享值PK
 活动日期：2021-05-07 至 2021-05-31
 更新地址：https://raw.githubusercontent.com/monk-coder/dust/dust/normal/adolf_pk.js
