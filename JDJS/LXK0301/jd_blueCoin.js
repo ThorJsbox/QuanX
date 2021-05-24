@@ -1,5 +1,5 @@
 /*
-东东超市兑换奖品 脚本地址：https://jdsharedresourcescdn.azureedge.net/jdresource/jd_blueCoin.js
+东东超市兑换奖品  脚本地址：https://jdsharedresourcescdn.azureedge.net/jdresource/jd_blueCoin.js
 感谢@yangtingxiao提供PR
 更新时间：2021-3-2
 活动入口：京东APP我的-更多工具-东东超市
