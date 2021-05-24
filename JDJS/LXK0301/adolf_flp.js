@@ -1,5 +1,5 @@
 /*
-飞利浦电视成长记
+飞利浦成长记
 活动地址：https://lzdz1-isv.isvjcloud.com/dingzhi/flp/game/activity?activityId=dz2105100000109501&lng=00.000000&lat=00.000000&sid=&un_area=
 活动日期：2021-05-18 至 2021-06-18
 
