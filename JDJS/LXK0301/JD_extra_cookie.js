@@ -1,4 +1,4 @@
-/*/*
+/*
 感谢github@dompling的PR
 
 Author: 2Ya
