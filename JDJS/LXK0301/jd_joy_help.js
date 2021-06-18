@@ -1,4 +1,4 @@
-/*
+/*/
 宠汪汪强制为别人助力（助力一个好友你自己可以获得30积分，一天上限是帮助3个好友，自己获得90积分，不管助力是否成功，对方都会成为你的好友）
 更新地址：https://jdsharedresourcescdn.azureedge.net/jdresource/jd_joy_help.js
 更新时间：2021-1-21
