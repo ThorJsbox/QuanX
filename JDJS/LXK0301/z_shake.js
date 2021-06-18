@@ -1,5 +1,5 @@
 /*
-摇一摇
+超级摇一摇
 不定时京豆活动
 有看到新活动可以私信我添加活动ID。 GitHub@i-chenzhe
 新手写脚本，难免有bug，能用且用。
@@ -25,7 +25,7 @@ const $ = new Env('超级摇一摇');
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
 let cookiesArr = [], cookie = '';
-let helpAuthor = true;//为作者助力的开关
+let helpAuthor = false;//为作者助力的开关
 let joinMember = false;//是否完成开卡任务开关
 if ($.isNode()) {
     Object.keys(jdCookieNode).forEach((item) => {
