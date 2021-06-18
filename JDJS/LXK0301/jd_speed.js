@@ -1,4 +1,4 @@
-/*
+/*/
 京东天天加速链接：https://jdsharedresourcescdn.azureedge.net/jdresource/jd_speed.js
 更新时间：2020-12-25
 活动入口：京东APP我的-更多工具-天天加速
