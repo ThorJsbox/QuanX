@@ -1,6 +1,5 @@
 ﻿/*
-京东极速版红包
-自动提现微信现金
+京东极速版红包 自动提现微信现金
 
 活动时间：2021-4-6至2021-5-5
 活动地址：https://prodev.m.jd.com/jdlite/active/31U4T6S4PbcK83HyLPioeCWrD63j/index.html
