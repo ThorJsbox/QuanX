@@ -203,7 +203,7 @@ function collectElectricity(facId = $.factoryId, help = false, master) {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
-          console.log(`${$.name} API请求失败，请检查网路重试`)
+          console.log(`${$.name} API请求失败， 请检查网路重试`)
         } else {
           if (safeGet(data)) {
             data = JSON.parse(data);
