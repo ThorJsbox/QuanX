@@ -6,7 +6,7 @@
 脚本兼容: QuantumultX, Surge,Loon, JSBox, Node.js
 =================================Quantumultx=========================
 [task_local]
-#5G超级盲盒
+# 5G超级盲盒
 0 0,1-23/3 * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_mohe.js, tag=5G超级盲盒, img-url=https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true
 
 =================================Loon===================================
