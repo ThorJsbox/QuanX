@@ -1,4 +1,4 @@
-/*/
+/*
 幸运大转盘
 活动地址：https://pro.m.jd.com/mall/active/3ryu78eKuLyY5YipWWVSeRQEpLQP/index.html
 脚本兼容: Quantumult X, Surge, Loon, JSBox, Node.js
