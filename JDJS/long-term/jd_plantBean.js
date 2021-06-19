@@ -35,7 +35,7 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [ // IOS本地脚本用户这个列表填入你要助力的好友的shareCode
                    //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开
-  '',
+  'lj575ed3vdxywdlywopq32w3ri@2d3ze4echp3ysyp56bl4mtvhw4@e7lhibzb3zek3srbmqtbdqmriivcvhscpqlwdpq',
   //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
   ''
 ]
