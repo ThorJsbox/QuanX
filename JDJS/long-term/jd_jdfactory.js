@@ -1,41 +1,14 @@
 /*
- * @Author: LXK9301 https://github.com/LXK9301
- * @Date: 2020-12-06 18:19:21
- * @Last Modified by: LXK9301
- * @Last Modified time: 2020-12-26 22:58:02
- *//
-/*
-东东工厂，不是京喜工厂
-活动入口：京东APP首页-数码电器-东东工厂
 免费产生的电量(10秒1个电量，500个电量满，5000秒到上限不生产，算起来是84分钟达到上限)
 故建议1小时运行一次
-开会员任务和去京东首页点击“数码电器任务目前未做
-不会每次运行脚本都投入电力
-只有当心仪的商品存在，并且收集起来的电量满足当前商品所需电力，才投入
-已支持IOS双京东账号,Node.js支持N个京东账号
-脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js
-============Quantumultx===============
-[task_local]
-#东东工厂
-10 * * * * https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jdfactory.js, tag=东东工厂, img-url=https://raw.githubusercontent.com/58xinian/icon/master/jd_factory.png, enabled=true
 
-================Loon==============
-[Script]
-cron "10 * * * *" script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jdfactory.js,tag=东东工厂
-
-===============Surge=================
-东东工厂 = type=cron,cronexp="10 * * * *",wake-system=1,timeout=3600,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jdfactory.js
-
-============小火箭=========
-东东工厂 = type=cron,script-path=https://jdsharedresourcescdn.azureedge.net/jdresource/jd_jdfactory.js, cronexpr="10 * * * *", timeout=3600, enable=true
- */
 const $ = new Env('东东工厂');
 
 const notify = $.isNode() ? require('./sendNotify') : '';
 //Node.js用户请在jdCookie.js处填写京东ck;
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 let jdNotify = true;//是否关闭通知，false打开通知推送，true关闭通知推送
-const randomCount = $.isNode() ? 0 : 5;
+const randomCount = $.isNode() ? 20 : 5;
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [], cookie = '', message;
 if ($.isNode()) {
@@ -45,11 +18,17 @@ if ($.isNode()) {
   if (process.env.JD_DEBUG && process.env.JD_DEBUG === 'false') console.log = () => {};
   if (process.env.JDFACTORY_FORBID_ACCOUNT) process.env.JDFACTORY_FORBID_ACCOUNT.split('&').map((item, index) => Number(item) === 0 ? cookiesArr = [] : cookiesArr.splice(Number(item) - 1 - index, 1))
 } else {
-  cookiesArr = [$.getdata('CookieJD'), $.getdata('CookieJD2'), ...jsonParse($.getdata('CookiesJD') || "[]").map(item => item.cookie)].filter(item => !!item);
+  let cookiesData = $.getdata('CookiesJD') || "[]";
+  cookiesData = jsonParse(cookiesData);
+  cookiesArr = cookiesData.map(item => item.cookie);
+  cookiesArr.reverse();
+  cookiesArr.push(...[$.getdata('CookieJD2'), $.getdata('CookieJD')]);
+  cookiesArr.reverse();
+  cookiesArr = cookiesArr.filter(item => item !== "" && item !== null && item !== undefined);
 }
 let wantProduct = ``;//心仪商品名称
 const JD_API_HOST = 'https://api.m.jd.com/client.action';
-const inviteCodes = [`T0205KkcJUVwjTa2QFOI9pJoCjVWnYaS5kRrbA`, 'T0205KkcJWlLvSGzaEuv56R3CjVWnYaS5kRrbA'];
+const inviteCodes = [`T022v_13RxwZ91ffPR_wlPcNfACjVWnYaS5kRrbA@T0205KkcH1lQpB6qW3uX06FuCjVWnYaS5kRrbA@T0225KkcRR1K8wXXJxKiwaIIdACjVWnYaS5kRrbA@T018v_h6QBsa9VfeKByb1ACjVWnYaS5kRrbA@T016aGPImbWDIsNs9Zd1CjVWnYaS5kRrbA@T020anX1lb-5IPJt9JJyQH-MCjVWnYaS5kRrbA@T0225KkcRBoRp1SEJBP1nKIDdgCjVWnYaS5kRrbA@T0225KkcRBoRp1SEJBP1nKIDdgCjVWnYaS5kRrbA`, 'T022v_13RxwZ91ffPR_wlPcNfACjVWnYaS5kRrbA@T0205KkcH1lQpB6qW3uX06FuCjVWnYaS5kRrbA@T0225KkcRR1K8wXXJxKiwaIIdACjVWnYaS5kRrbA@T018v_h6QBsa9VfeKByb1ACjVWnYaS5kRrbA@T016aGPImbWDIsNs9Zd1CjVWnYaS5kRrbA@T020anX1lb-5IPJt9JJyQH-MCjVWnYaS5kRrbA@T0225KkcRBoRp1SEJBP1nKIDdgCjVWnYaS5kRrbA@T0225KkcRBoRp1SEJBP1nKIDdgCjVWnYaS5kRrbA'];
 !(async () => {
   await requireConfig();
   if (!cookiesArr[0]) {
@@ -59,13 +38,12 @@ const inviteCodes = [`T0205KkcJUVwjTa2QFOI9pJoCjVWnYaS5kRrbA`, 'T0205KkcJWlLvSGz
   for (let i = 0; i < cookiesArr.length; i++) {
     if (cookiesArr[i]) {
       cookie = cookiesArr[i];
-      $.UserName = decodeURIComponent(cookie.match(/pt_pin=([^; ]+)(?=;?)/) && cookie.match(/pt_pin=([^; ]+)(?=;?)/)[1])
+      $.UserName = decodeURIComponent(cookie.match(/pt_pin=(.+?);/) && cookie.match(/pt_pin=(.+?);/)[1])
       $.index = i + 1;
       $.isLogin = true;
       $.nickName = '';
       message = '';
       await TotalBean();
-      console.log(`\n******开始【京东账号${$.index}】${$.nickName || $.UserName}*********\n`);
       if (!$.isLogin) {
         $.msg($.name, `【提示】cookie已失效`, `京东账号${$.index} ${$.nickName || $.UserName}\n请重新登录获取\nhttps://bean.m.jd.com/bean/signIndex.action`, {"open-url": "https://bean.m.jd.com/bean/signIndex.action"});
 
@@ -86,27 +64,23 @@ const inviteCodes = [`T0205KkcJUVwjTa2QFOI9pJoCjVWnYaS5kRrbA`, 'T0205KkcJWlLvSGz
       $.done();
     })
 async function jdFactory() {
-  try {
-    await jdfactory_getHomeData();
-    await helpFriends();
-    // $.newUser !==1 && $.haveProduct === 2，老用户但未选购商品
-    // $.newUser === 1新用户
-    if ($.newUser === 1) return
-    await jdfactory_collectElectricity();//收集产生的电量
-    await jdfactory_getTaskDetail();
-    await doTask();
-    await algorithm();//投入电力逻辑
-    await showMsg();
-  } catch (e) {
-    $.logErr(e)
-  }
+  await jdfactory_getHomeData();
+  await helpFriends();
+  // $.newUser !==1 && $.haveProduct === 2，老用户但未选购商品
+  // $.newUser === 1新用户
+  if ($.newUser === 1) return
+  await jdfactory_collectElectricity();//收集产生的电量
+  await jdfactory_getTaskDetail();
+  await doTask();
+  await algorithm();//投入电力逻辑
+  await showMsg();
 }
 function showMsg() {
   return new Promise(resolve => {
     if (!jdNotify) {
       $.msg($.name, '', `${message}`);
     } else {
-      $.log(`${message}`);
+      $.log(`京东账号${$.index}${$.nickName}\n${message}`);
     }
     if (new Date().getHours() === 12) {
       $.msg($.name, '', `${message}`);
@@ -449,7 +423,7 @@ function jdfactory_getTaskDetail() {
               $.taskVos = data.data.result.taskVos;//任务列表
               $.taskVos.map(item => {
                 if (item.taskType === 14) {
-                  console.log(`\n【京东账号${$.index}（${$.UserName}）的${$.name}好友互助码】${item.assistTaskDetailVo.taskToken}\n`)
+                  console.log(`\n【京东账号${$.index}（${$.nickName || $.UserName}）的${$.name}好友互助码】${item.assistTaskDetailVo.taskToken}\n`)
                 }
               })
             }
@@ -622,14 +596,19 @@ function jdfactory_getHomeData() {
 function readShareCode() {
   console.log(`开始`)
   return new Promise(async resolve => {
-    $.get({url: `http://jd.turinglabs.net/api/v2/jd/ddfactory/read/${randomCount}/`, timeout: 10000}, (err, resp, data) => {
+    $.get({url: "https://wuzhi03.coding.net/p/dj/d/RandomShareCode/git/raw/main/JD_Factory.json",headers:{
+        "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 13_2_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.3 Mobile/15E148 Safari/604.1 Edg/87.0.4280.88"
+      }}, async (err, resp, data) => {
       try {
         if (err) {
           console.log(`${JSON.stringify(err)}`)
-          console.log(`${$.name} API请求失败，请检查网路重试`)
+          console.log(`${$.name} API请求失败，将切换为备用API`)
+          console.log(`随机取助力码放到您固定的互助码后面(不影响已有固定互助)`)
+          $.get({url: `https://raw.githubusercontent.com/shuyeshuye/RandomShareCode/main/JD_Factory.json`, 'timeout': 10000},(err, resp, data)=>{
+          data = JSON.parse(data);})
         } else {
           if (data) {
-            console.log(`随机取${randomCount}个码放到您固定的互助码后面(不影响已有固定互助)`)
+            console.log(`随机取助力码放到您固定的互助码后面(不影响已有固定互助)`)
             data = JSON.parse(data);
           }
         }
@@ -717,7 +696,7 @@ function TotalBean() {
         "Connection": "keep-alive",
         "Cookie": cookie,
         "Referer": "https://wqs.jd.com/my/jingdou/my.shtml?sceneval=2",
-        "User-Agent": $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.4.4;14.3;network/4g;Mozilla/5.0 (iPhone; CPU iPhone OS 14_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148;supportJDSHWK/1")
+        "User-Agent": $.isNode() ? (process.env.JD_USER_AGENT ? process.env.JD_USER_AGENT : (require('./USER_AGENTS').USER_AGENT)) : ($.getdata('JDUA') ? $.getdata('JDUA') : "jdapp;iPhone;9.2.2;14.2;%E4%BA%AC%E4%B8%9C/9.2.2 CFNetwork/1206 Darwin/20.1.0")
       },
       "timeout": 10000,
     }
@@ -734,7 +713,7 @@ function TotalBean() {
               return
             }
             if (data['retcode'] === 0) {
-              $.nickName = (data['base'] && data['base'].nickname) || $.UserName;
+              $.nickName = data['base'].nickname;
             } else {
               $.nickName = $.UserName
             }
