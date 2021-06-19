@@ -1,4 +1,4 @@
-//5 6-18/6 * * * , tag=东东农场免费水果, enabled=true
+//5 6-18/6 * * * , tag=东东农场 免费水果, enabled=true
 
 const $ = new Env('东东农场');
 let cookiesArr = [], cookie = '', jdFruitShareArr = [], isBox = false, notify, newShareCodes, allMessage = '';
