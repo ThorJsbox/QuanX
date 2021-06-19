@@ -7,7 +7,7 @@ let cookiesArr = [], cookie = '', jdFruitShareArr = [], isBox = false, notify, n
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [  // 这个列表填入你要助力的好友的shareCode
   //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开
-  //'20bab5d0edc044a999216db8872cec04@e8b5580c693042b3b276b693c4e30b8b',
+  'a785ccfee1cd44c7ae9c0e7de462bed0@922072bf6a7f4bfd8b6dfa2d8a074a89',
   //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
   //'20bab5d0edc044a999216db8872cec04@e8b5580c693042b3b276b693c4e30b8b',
 ]
