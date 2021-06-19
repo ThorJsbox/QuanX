@@ -1,4 +1,4 @@
-/*/
+/*
 种豆得豆 脚本更新地址：https://jdsharedresourcescdn.azureedge.net/jdresource/jd_plantBean.js
 更新时间：2021-04-9
 活动入口：京东APP我的-更多工具-种豆得豆
@@ -35,12 +35,9 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [ // IOS本地脚本用户这个列表填入你要助力的好友的shareCode
                    //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开
-  'igefhjvuw6xvt37nfopazasd736hoexc7noicyi@nkiu2rskjyetaflli3vdqmsxf3rlkthnluyyxbq@t7obxmpebrxkdn7mbhopspvhar5hr3pdlyuftfq@nkiu2rskjyetajviwcdnsmkgfgvv3h7vsaovmki@nbuilwje3miiimiax2gwyxjqci@4oupleiwuds2a53o2tkkifsk56amzpngg7zvwna@e7lhibzb3zek2zojb2jp6wzsxnamwxvrvcdmqtq@o7eiltak46s2xhafluetpih5vrv6clgg4sllcpi',
+  '',
   //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
-  'igefhjvuw6xvt37nfopazasd736hoexc7noicyi@nkiu2rskjyetaflli3vdqmsxf3rlkthnluyyxbq@t7obxmpebrxkdn7mbhopspvhar5hr3pdlyuftfq@nkiu2rskjyetajviwcdnsmkgfgvv3h7vsaovmki@nbuilwje3miiimiax2gwyxjqci@4oupleiwuds2a53o2tkkifsk56amzpngg7zvwna@e7lhibzb3zek2zojb2jp6wzsxnamwxvrvcdmqtq@o7eiltak46s2xhafluetpih5vrv6clgg4sllcpi',
-  'igefhjvuw6xvt37nfopazasd736hoexc7noicyi@nkiu2rskjyetaflli3vdqmsxf3rlkthnluyyxbq@t7obxmpebrxkdn7mbhopspvhar5hr3pdlyuftfq@nkiu2rskjyetajviwcdnsmkgfgvv3h7vsaovmki@nbuilwje3miiimiax2gwyxjqci@4oupleiwuds2a53o2tkkifsk56amzpngg7zvwna@e7lhibzb3zek2zojb2jp6wzsxnamwxvrvcdmqtq@o7eiltak46s2xhafluetpih5vrv6clgg4sllcpi',
-  'igefhjvuw6xvt37nfopazasd736hoexc7noicyi@nkiu2rskjyetaflli3vdqmsxf3rlkthnluyyxbq@t7obxmpebrxkdn7mbhopspvhar5hr3pdlyuftfq@nkiu2rskjyetajviwcdnsmkgfgvv3h7vsaovmki@nbuilwje3miiimiax2gwyxjqci@4oupleiwuds2a53o2tkkifsk56amzpngg7zvwna@e7lhibzb3zek2zojb2jp6wzsxnamwxvrvcdmqtq@o7eiltak46s2xhafluetpih5vrv6clgg4sllcpi',
-  'igefhjvuw6xvt37nfopazasd736hoexc7noicyi@nkiu2rskjyetaflli3vdqmsxf3rlkthnluyyxbq@t7obxmpebrxkdn7mbhopspvhar5hr3pdlyuftfq@nkiu2rskjyetajviwcdnsmkgfgvv3h7vsaovmki@nbuilwje3miiimiax2gwyxjqci@4oupleiwuds2a53o2tkkifsk56amzpngg7zvwna@e7lhibzb3zek2zojb2jp6wzsxnamwxvrvcdmqtq@o7eiltak46s2xhafluetpih5vrv6clgg4sllcpi'
+  ''
 ]
 let allMessage = ``;
 let currentRoundId = null;//本期活动id
