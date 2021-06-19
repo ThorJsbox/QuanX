@@ -52,6 +52,5 @@
     {"config":"0 1-23/1 * * * https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/JDJS/long-term/jd_shake.js, tag=超级摇一摇,  enabled=true", "addons":"https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/JDJS/cookies.conf"},
     {"config":"1 0-23/1 * * * https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/JDJS/long-term/jd_super_redrain.js, tag=整点京豆雨, enabled=true", "addons":"https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/JDJS/cookies.conf"},
     {"config":"0 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/JDJS/long-term/jd_xxl.js, tag=东东爱消除, enabled=true", "addons":"https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/JDJS/cookies.conf"},
-    {"config":"15 15 * * * https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/JDJS/long-term/monk_shop_follow_sku.js, tag=关注有礼,  enabled=true", "addons":"https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/JDJS/cookies.conf"},
   ]
 }
