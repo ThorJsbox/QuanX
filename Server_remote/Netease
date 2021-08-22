@@ -20,4 +20,4 @@ Netease Music19 = Shadowsocks,music.desperadoj.com,30003,cipher:aes-128-gcm,pass
 Netease Music20 = Shadowsocks,proxy.plusmedia.site,58081,rc4-md5,password:T5ckndbLSXHQ
 Netease Music21 = http,59.24.3.174,58080
 Netease Music22, server: PROXY.PLUSMEDIA.SITE, port: 58081, type: ss, cipher: rc4-md5, password: T5ckndbLSXHQ
-Netease Music23, server: MUSIC.DESPERADOJ.COM, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m}
+Netease Music23, server: MUSIC.DESPERADOJ.COM, port: 30003, type: ss, cipher: aes-128-gcm, password: desperadoj.com_free_proxy_d39m
