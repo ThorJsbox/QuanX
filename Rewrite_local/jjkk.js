@@ -1,0 +1,27 @@
+/*
+微信公众号：ios黑科技
+官方网站：s7aa.cn
+
+圈X:
+
+[rewrite_local]
+
+#健健康康解锁VIP无限看
+^https:\/\/apid\.9waquan\.com\/sw2\/current\/user url script-request-header https://6678888.xyz/quantumultX/jjkk.js
+
+[mitm]
+hostname = apid.9waquan.com
+
+QA666下载地址
+https://qa666.xyz?tg=1959655
+
+*/
+
+
+var modifiedHeaders = $request.headers;
+
+modifiedHeaders['Origin'] = 'https://tymsjs.com';
+modifiedHeaders['Access-Token'] = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkZXZpY2VfaWQiOiI0QzJERkIwRS1FRkFGLTQzRkItQkQzOS0yMUMzMTQ4NjZFQkMiLCJtZW1iZXJfaWQiOiJKSzg0ODgxNTEiLCJlbWFpbCI6Imlvc2hrakAxNjMuY29tIiwiZXhwIjoxNjI4NzgyNjM4LCJzeXN0ZW1fdGltZSI6MTYyODM1MDYzOCwicGFzc3dvcmQiOiIqKioqKioxMSIsIndhdGNoZWRfY291bnQiOjAsImNhbl93YXRjaF9jb3VudCI6MjAsImNoYW5nZV9kZXZpY2VfY291bnQiOjEsInVubGltaXRlZF9leHBpcmVkX3RpbWUiOjE1OTkxNDg3OTksInVuYWRfaGFsZl9leHBpcmVkX3RpbWUiOjAsInVuYWRfZnVsbF9leHBpcmVkX3RpbWUiOjAsImNoZWNraW5fbWlzc2lvbiI6MCwiY2hlY2tpbl9jb3VudCI6MCwidW5saW1pdGVkX2xpdmVfdmlkZW9fZXhwaXJlZF90aW1lIjowLCJjaGFyYWN0ZXJfY29sbGVjdGVkIjoiIiwiY29sbGVjdF9saW1pdCI6MjAsImxhc3RfbG9naW5fdGltZSI6MTYyODMzNzAyOSwicGxhdGZvcm0iOiJpb3MiLCJ2aXBfdGlsbCI6MTYzMzg5NjAwMCwiYm91Z2h0X3ZpcF9iZWZvcmUiOjAsImFsbF9mcmVlX3ZpcCI6ZmFsc2UsImludml0ZWRfYnkiOiJKSzg0ODgyODIiLCJpbnZpdGVfY291bnQiOjQ2LCJjYW5fZG93bmxvYWQiOjAsIm1lbWJlcl9zdGF0dXMiOjEsInJlbWFpbmluZ19wb2ludCI6MCwidmlwX2dvbGQiOnsic3RhcjEiOjAsInN0YXIyIjoxLCJzdGFyMyI6MCwidmlwX2dvbGRfdGlsbCI6MTYyMTMzNTcyNn19.8nISgoybvkzExj5I8HB3JKegvu8kEUAt_nvh0Xuheio';
+modifiedHeaders['Referer'] = 'https://tymsjs.com/';
+
+$done({headers : modifiedHeaders});
