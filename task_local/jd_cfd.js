@@ -69,16 +69,16 @@ $.appId = 10028;
   $.CryptoJS = $.isNode() ? require('crypto-js') : CryptoJS;
   await requestAlgo();
   await $.wait(1000)
-  let res = await getAuthorShareCode('https://raw.githubusercontent.com/ThorJsbox/QuanX/master/task_local/updateTeam/cfd.json')
+  let res = await getAuthorShareCode('https://raw.githubusercontent.com/ThorJsbox/QuanX/master/task_local/updateTeam/jd_cfd.json')
   if (!res) {
-    $.http.get({url: 'https://purge.jsdelivr.net/gh/ThorJsbox/QuanX@master/task_local/updateTeam/cfd.json'}).then((resp) => {}).catch((e) => console.log('刷新CDN异常', e));
+    $.http.get({url: 'https://purge.jsdelivr.net/gh/ThorJsbox/QuanX@master/task_local/updateTeam/jd_cfd.json'}).then((resp) => {}).catch((e) => console.log('刷新CDN异常', e));
     await $.wait(1000)
-    res = await getAuthorShareCode('https://cdn.jsdelivr.net/gh/ThorJsbox/QuanX@master/task_local/updateTeam/ShareCodes/cfd.json')
+    res = await getAuthorShareCode('https://cdn.jsdelivr.net/gh/ThorJsbox/QuanX@master/task_local/updateTeam/ShareCodes/jd_cfd.json')
   }
-  let res2 = await getAuthorShareCode('https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/task_local/updateTeam/cfd.json')
+  let res2 = await getAuthorShareCode('https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/task_local/updateTeam/jd_cfd.json')
   if (!res2) {
     await $.wait(1000)
-    res2 = await getAuthorShareCode('https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/task_local/updateTeam/cfd.json')
+    res2 = await getAuthorShareCode('https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/task_local/updateTeam/jd_cfd.json')
   }
   $.strMyShareIds = [...(res && res.shareId || []), ...(res2 || [])]
   for (let i = 0; i < cookiesArr.length; i++) {
