@@ -71,7 +71,7 @@ $.appId = 10028;
   await $.wait(1000)
   let res = await getAuthorShareCode('https://raw.githubusercontent.com/ThorJsbox/QuanX/master/task_local/updateTeam/cfd.json')
   if (!res) {
-    $.http.get({url: 'https://purge.jsdelivr.net/gh/ThorJsbox/QuanX@master/task_local/updateTeam//cfd.json'}).then((resp) => {}).catch((e) => console.log('刷新CDN异常', e));
+    $.http.get({url: 'https://purge.jsdelivr.net/gh/ThorJsbox/QuanX@master/task_local/updateTeam/cfd.json'}).then((resp) => {}).catch((e) => console.log('刷新CDN异常', e));
     await $.wait(1000)
     res = await getAuthorShareCode('https://cdn.jsdelivr.net/gh/ThorJsbox/QuanX@master/task_local/updateTeam/ShareCodes/cfd.json')
   }
