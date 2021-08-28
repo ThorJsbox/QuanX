@@ -61,7 +61,7 @@ const JD_API_HOST = `https://api.m.jd.com`;
 
     if (helpAuthorFlag) {
         try {
-            helpAuthorInfo = await getAuthorShareCode('https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/task_local/updateTeam/jd_dyj.json');
+            helpAuthorInfo = await getAuthorShareCode('https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/task_local/updateTeam/jd_fcdyj.json');
         } catch (e) {
         }
         if (!helpAuthorInfo) {
