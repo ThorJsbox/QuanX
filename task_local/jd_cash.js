@@ -32,16 +32,11 @@ let helpAuthor = true;
 const randomCount = $.isNode() ? 5 : 5;
 let cash_exchange = false;//是否消耗2元红包兑换200京豆，默认否
 const inviteCodes = [
-'e1tjMO-6Zg@eltvM7LnObh1@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B@WW9Ybeuzb_km9w',
-'e1tjMO-6Zg@eltvM7LnObh1@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B@WW9Ybeuzb_km9w',
-'e1tjMO-6Zg@eltvM7LnObh1@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B@WW9Ybeuzb_km9w',
-'e1tjMO-6Zg@eltvM7LnObh1@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B@WW9Ybeuzb_km9w',
-'e1tjMO-6Zg@eltvM7LnObh1@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B@WW9Ybeuzb_km9w',
-'e1tjMO-6Zg@eltvM7LnObh1@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B@WW9Ybeuzb_km9w',
-'e1tjMO-6Zg@eltvM7LnObh1@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B@WW9Ybeuzb_km9w',
-'e1tjMO-6Zg@eltvM7LnObh1@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B@WW9Ybeuzb_km9w',
-'e1tjMO-6Zg@eltvM7LnObh1@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B@WW9Ybeuzb_km9w',
-'e1tjMO-6Zg@eltvM7LnObh1@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B@WW9Ybeuzb_km9w' 
+'e1tjMO-6Zg@eltvM7LnObh1@WW9Ybeuzb_km9w@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B',
+'e1tjMO-6Zg@eltvM7LnObh1@WW9Ybeuzb_km9w@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B',
+'e1tjMO-6Zg@eltvM7LnObh1@WW9Ybeuzb_km9w@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B',
+'e1tjMO-6Zg@eltvM7LnObh1@WW9Ybeuzb_km9w@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B',
+'e1tjMO-6Zg@eltvM7LnObh1@WW9Ybeuzb_km9w@eU9YaOS2MvQl8mnUwnEUhA@eU9YFbrAOYp8kBqtmg5B',
 ]
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
@@ -59,11 +54,11 @@ let allMessage = '';
     return;
   }
   await requireConfig()
-  $.authorCode = await getAuthorShareCode('https://raw.githubusercontent.com/ThorJsbox/QuanX/master/task_local/updateTeam/jd_updateCash.json')
+  $.authorCode = await getAuthorShareCode('https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/task_local/updateTeam/jd_updateCash.json')
   if (!$.authorCode) {
-    $.http.get({url: 'https://purge.jsdelivr.net/gh/ThorJsbox/QuanX@master/task_local/updateTeam/jd_updateCash.json'}).then((resp) => {}).catch((e) => $.log('刷新CDN异常', e));
+    $.http.get({url: 'https://purge.jsdelivr.net/gh/ThorJsbox/QuanX/@master/task_local/updateTeam/jd_updateCash.json'}).then((resp) => {}).catch((e) => $.log('刷新CDN异常', e));
     await $.wait(1000)
-    $.authorCode = await getAuthorShareCode('https://ghproxy.com/https://raw.githubusercontent.com/ThorJsbox/QuanX/master/task_local/updateTeam/jd_updateCash.json') || []
+    $.authorCode = await getAuthorShareCode('https://cdn.jsdelivr.net/gh/ThorJsbox/QuanX/@master/task_local/updateTeam/jd_updateCash.json') || []
   }
   for (let i = 0; i < cookiesArr.length; i++) {
     if (cookiesArr[i]) {
