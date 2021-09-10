@@ -12,7 +12,7 @@ QX:
 hostname = 1.blg\d{3}.xyz
 
 下载地址：（需自签或越狱）
-https://hkj.lanzous.com/ie7zAnexo2b
+https://pan.lanzou.com/ie7zAnexo2b
 
 网页版：（无证书可使用网页版）
 http://1.blg579.xyz
