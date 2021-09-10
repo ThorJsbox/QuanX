@@ -12,8 +12,8 @@ hostname= lfwmkj.com
 
 独品社区下载地址：（任意号注册不限制，不收验证码）
 邀请码：K4GPHE
-https://wws.lanzous.com/s/seyou01
-https://wws.lanzous.com/s/seyou02
+https://pan.lanzou.com/s/seyou01
+https://pan.lanzou.com/s/seyou02
 
 */
 
