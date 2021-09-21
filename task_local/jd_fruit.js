@@ -30,15 +30,15 @@ let cookiesArr = [], cookie = '', jdFruitShareArr = [], isBox = false, notify, n
 //下面给出两个账号的填写示例（iOS只支持2个京东账号）
 let shareCodes = [ // 这个列表填入你要助力的好友的shareCode
    //账号一的好友shareCode,不同好友的shareCode中间用@符号隔开
-  '3c8fecb8695d4098b9baaabccbe6090e@a785ccfee1cd44c7ae9c0e7de462bed0@922072bf6a7f4bfd8b6dfa2d8a074a89@fb749ccbf525429cb6e87441faacf604@8338b9f9754c4a88b37cb9af2ab4ddbb',
+  '3c8fecb8695d4098b9baaabccbe6090e@a785ccfee1cd44c7ae9c0e7de462bed0@922072bf6a7f4bfd8b6dfa2d8a074a89@fb749ccbf525429cb6e87441faacf604',
   //账号二的好友shareCode,不同好友的shareCode中间用@符号隔开
-  '3c8fecb8695d4098b9baaabccbe6090e@a785ccfee1cd44c7ae9c0e7de462bed0@922072bf6a7f4bfd8b6dfa2d8a074a89@fb749ccbf525429cb6e87441faacf604@8338b9f9754c4a88b37cb9af2ab4ddbb',
+  '3c8fecb8695d4098b9baaabccbe6090e@a785ccfee1cd44c7ae9c0e7de462bed0@922072bf6a7f4bfd8b6dfa2d8a074a89@fb749ccbf525429cb6e87441faacf604',
   //账号三的好友shareCode,不同好友的shareCode中间用@符号隔开
-  '3c8fecb8695d4098b9baaabccbe6090e@a785ccfee1cd44c7ae9c0e7de462bed0@922072bf6a7f4bfd8b6dfa2d8a074a89@fb749ccbf525429cb6e87441faacf604@8338b9f9754c4a88b37cb9af2ab4ddbb',
+  '3c8fecb8695d4098b9baaabccbe6090e@a785ccfee1cd44c7ae9c0e7de462bed0@922072bf6a7f4bfd8b6dfa2d8a074a89@fb749ccbf525429cb6e87441faacf604',
   //账号四的好友shareCode,不同好友的shareCode中间用@符号隔开
-  '3c8fecb8695d4098b9baaabccbe6090e@a785ccfee1cd44c7ae9c0e7de462bed0@922072bf6a7f4bfd8b6dfa2d8a074a89@fb749ccbf525429cb6e87441faacf604@8338b9f9754c4a88b37cb9af2ab4ddbb',
+  '3c8fecb8695d4098b9baaabccbe6090e@a785ccfee1cd44c7ae9c0e7de462bed0@922072bf6a7f4bfd8b6dfa2d8a074a89@fb749ccbf525429cb6e87441faacf604',
   //账号五的好友shareCode,不同好友的shareCode中间用@符号隔开
-  '3c8fecb8695d4098b9baaabccbe6090e@a785ccfee1cd44c7ae9c0e7de462bed0@922072bf6a7f4bfd8b6dfa2d8a074a89@fb749ccbf525429cb6e87441faacf604@8338b9f9754c4a88b37cb9af2ab4ddbb',
+  '3c8fecb8695d4098b9baaabccbe6090e@a785ccfee1cd44c7ae9c0e7de462bed0@922072bf6a7f4bfd8b6dfa2d8a074a89@fb749ccbf525429cb6e87441faacf604',
 ]
 let message = '', subTitle = '', option = {}, isFruitFinished = false;
 const retainWater = 100;//保留水滴大于多少g,默认100g;
@@ -98,7 +98,7 @@ async function jdFruit() {
       message = `【水果名称】${$.farmInfo.farmUserPro.name}\n`;
       console.log(`\n【京东账号${$.index}（${$.UserName}）的${$.name}好友互助码】${$.farmInfo.farmUserPro.shareCode}\n`);
       await $.get({
-        url: 'http://51.15.187.136:8080/activeJdFruitCode?code=' + $.farmInfo.farmUserPro.shareCode
+        //url: 'http://51.15.187.136:8080/activeJdFruitCode?code=' + $.farmInfo.farmUserPro.shareCode
       }, function (err, resp, data) {
         console.log('互助码状态:' + resp.body);
       })
