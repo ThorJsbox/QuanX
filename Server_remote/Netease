@@ -16,8 +16,9 @@ Netease Music15 = http,block4music.poetyin.me,39000
 Netease Music16 = http,223.112.128.66,23334
 Netease Music17 = http,salvan.icu,19980
 Netease Music18 = http,1.116.214.16,19980
-Netease Music19 = Shadowsocks,music.desperadoj.com,30003,aes-128-gcm,password:desperadoj.com_free_proxy_d39m
-Netease Music20 = Shadowsocks,proxy.plusmedia.site,58081,rc4-md5,password:T5ckndbLSXHQ
+Netease Music19 = Shadowsocks,music.desperadoj.com,30003,method,aes-128-gcm,password:desperadoj.com_free_proxy_d39m
+Netease Music20 = Shadowsocks,proxy.plusmedia.site,58081,method,rc4-md5,password:T5ckndbLSXHQ
 Netease Music21 = http,59.24.3.174,58080
 Netease Music22 = http,os.dlj.tf,20000
 Netease Music23 = http,os.dlj.tf,30000
+Netease Music24 = shadowsocks=music.desperadoj.com:30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_d39m
