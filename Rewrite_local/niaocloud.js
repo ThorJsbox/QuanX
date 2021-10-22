@@ -28,8 +28,8 @@ const $ = new Env('小鸟云签到');
 let NIAO_CLOUD_API = 'https://niaoyun.fun'
 let cookieList=[];
 let ny_cookie="";
-let ny_email="thorjsbox@163.com";
-let ny_pwd="zaq1xsw2";
+let ny_email="";
+let ny_pwd="";
 let ny_login=false;
 if ($.isNode()) {
     if (process.env.NIAO_CLOUD_COOKIES) {
