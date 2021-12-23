@@ -1,25 +1,6 @@
 {
 "sites":[
-{"key":"csp_xpath_subb","name":"素白白(XPMac-不能播改EXO)","type":3,"api":"csp_XPathSubb","searchable":1,"quickSearch":1,"filterable"0,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/xpath/subaibai.json"},
-{"key":"腾讯(官源)","name":"腾讯(官源)","type":0,"api":"http://www.zycaiji.net:7788/api.php/provide/vod/from/qq/at/xml/","playUrl":"https://jx.xmflv.vip/?url=","searchable":1,"quickSearch":1,"filterable":0},
-{"key":"优酷(官源)","name":"优酷(官源)","type":0,"api":"http://www.zycaiji.net:7788/api.php/provide/vod/from/youku/at/xml/","playUrl":"https://jx.xmflv.vip/?url=","searchable":1,"quickSearch":1,"filterable":0},
-{"key":"爱奇艺(官源)","name":"爱奇艺(官源)","type":0,"api":"http://www.zycaiji.net:7788/api.php/provide/vod/from/qiyi/at/xml/","playUrl":"https://jx.xmflv.vip/?url=","searchable":1,"quickSearch":1,"filterable":0},
-{"key":"2345_spider","name":"2345影视(官源)","type":3,"api":"csp_YS2345","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/ext/2345.json"},
-{"key":"360_spider","name":"360影视(官源)","type":3,"api":"csp_YS360","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/ext/360.json"},
-{"key":"buka_spider","name":"真不卡(SP)","type":3,"api":"csp_Buka","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/ext/buka.json"},
-{"key":"adys_spider","name":"爱迪影视(SP)","type":3,"api":"csp_Aidi","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/ext/aidi.json"},
-{"key":"cokemv_spider","name":"Cokemv(SP)","type":3,"api":"csp_Cokemv","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/ext/cokemv.json"},
-{"key":"rrm_spider","name":"人人迷(免解)","type":3,"api":"csp_Rrm","searchable":1,"quickSearch":1,"filterable":0,"ext":"B9C8093A210EADA1"},
-{"key":"8090资源","name":"8090资源","type":1,"api":"http://zy.yilans.net:8090/api.php/provide/vod/","playUrl":"https://jx.renrenmi.cc/?url=","searchable":1,"quickSearch":1,"filterable": 0,"categories":[]},
-{"key":"M3U8.TV资源","name":"M3U8.TV资源","type":1,"api":"http://www.zycaiji.net:7788/api.php/provide/vod/","playUrl":"https://jx.m3u8.tv/jiexi/?url=","searchable":1,"quickSearch":1,"categories":[]},
-{"key":"csp_xpath_tvci","name":"大师兄(XPMac)","type":3,"api":"csp_XPathMacFilter","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/tvci.json"},
-{"key":"csp_xpath_fantuan","name":"饭团(XPMac)","type":3,"api":"csp_XPathMac","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://cdn.jsdelivr.net/gh/YuanHsing/OneClickRun@master/xpath/fantuan.json"},
-{"key":"飞速","name":"FEISU影视","type":0,"api":"https://m3u8.feisuzyapi.com/vod/at/xml/","playUrl":"https://www.feisuplayer.com/m3u8/?url=","searchable":1,"quickSearch":0,"filterable":0},
-{"key":"迅播","name":"迅播qgvod","type":0,"api":"https://www.qgvod.com/api.php/provide/vod/at/xml/","playUrl":"https://jx.renrenmi.cc/?url=","searchable":1,"quickSearch":0,"filterable":0},
-{"key":"毒蜥蜴影视","name":"毒蜥蜴影视","type":0,"api":"https://www.duxiyi.com/api.php/provide/vod/at/xml/","playUrl":"https://jx.renrenmi.cc/?url=","searchable":1,"quickSearch":0,"filterable":0},
-{"key":"我爱跟剧","name":"我爱跟剧","type":0,"api":"https://www.genmov.com/api.php/provide/vod/at/xml/","playUrl":"https://jx.renrenmi.cc/?url=","searchable":1,"quickSearch":0,"filterable":0},
-{"key":"喵派对蓝光","name":"喵派对蓝光","type":0,"api":"https://www.neenl.com/api.php/provide/vod/at/xml","playUrl":"https://jx.renrenmi.cc/?url=","searchable":1,"quickSearch":1,"filterable":0},
-{"key":"csp_xpath_jpyszl","name":"极品直链(XPath)","type":3,"api":"csp_XPathMac","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://cdn.jsdelivr.net/gh/lite-cucumber/CatVodTVSpider@master/xpath/jpys.json"}
+{"key":"csp_xpath_subb","name":"素白白(XPMac-不能播改EXO)","type":3,"api":"csp_XPathSubb","searchable":1,"quickSearch":1,"filterable"0,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/xpath/subaibai.json"}
 ],
 "lives":[
 {"group":"中央电视台(ijk播放器)","channels":[
