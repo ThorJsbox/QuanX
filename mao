@@ -1,7 +1,8 @@
 {
 "spider":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/main_spider.txt;md5;dd70f51058b030fdeb0f616064a1567c",
 "sites":[
-{"key":"csp_xpath_subb","name":"素白白影视(XP)","type":3,"api":"csp_XPathSubb","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/xpath/subaibai.json"},
+{"key":"2345_spider","name":"2345影视(官源)","type":3,"api":"csp_YS2345","searchable":1,"quickSearch":1,"filterable":1,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/ext/2345.json"},
+{"key":"csp_xpath_subb","name":"素白白影视(XP)(不能播改EXO)","type":3,"api":"csp_XPathSubb","searchable":1,"quickSearch":1,"filterable":0,"ext":"https://litecucumber.coding.net/p/cat/d/config/git/raw/master/pub/xpath/subaibai.json"},
 {"key":"腾讯(官源)","name":"腾讯(官源)","type":0,"api":"http://www.zycaiji.net:7788/api.php/provide/vod/from/qq/at/xml/","playUrl":"","searchable":1,"quickSearch":1,"filterable":0},
 {"key":"优酷(官源)","name":"优酷(官源)","type":0,"api":"http://www.zycaiji.net:7788/api.php/provide/vod/from/youku/at/xml/","playUrl":"","searchable":1,"quickSearch":1,"filterable":0},
 {"key":"爱奇艺(官源)","name":"爱奇艺(官源)","type":0,"api":"http://www.zycaiji.net:7788/api.php/provide/vod/from/qiyi/at/xml/","playUrl":"","searchable":1,"quickSearch":1,"filterable":0},
