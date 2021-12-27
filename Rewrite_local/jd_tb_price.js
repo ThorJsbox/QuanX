@@ -1,8 +1,9 @@
 /*
 JD | TB Price comparison
 by Small
-date 2021-06-25
+date 2021-12-07
 Thanks @yichahucha
+修改32行Surge语法，兼容淘宝比价
 
 QX:
 ^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig) url script-response-body https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
@@ -27,7 +28,13 @@ const ScriptVersion = 8;
 const ScriptUrl = `https://service.2ti.st/QuanX/Script/${ScriptIdentifier}`
 
 const res = $request;
-const resp = isUndefined($response) ? null : $response;
+
+let resp = null;
+try{
+  resp =$response
+}catch(err){
+  console.log(err)
+};
 
 let Status = {
     Enable: 1,
@@ -340,7 +347,7 @@ function handleBijiago(data) {
     let historyObj = {
         tips: {
             "type": "text",
-            "title": "Tips:",
+            "title": "¥",
             "text": tips,
         },
         range: {
