@@ -1,23 +1,53 @@
-# NAME: Emby
-# AUTHOR: LucaLin233
-# 关键字匹配
-HOST-KEYWORD, emby, Emby
-
-# AGA公益服(中国电信可直连观看)
-HOST, emby.plusmedia.site, Emby
-
-# CF公益服(仅限挂代理观看)
-HOST, emby-cf.plusmedia.site, Emby
-
-# 备用服
-HOST, emby.xeton.dev, Emby
-HOST, jellyfin.xeton.dev, Emby
-HOST, movie.xeton.dev, Emby
-HOST, servers.xeton.dev, Emby
-
-# Nexitally/AmyTelecom专属服（仅限美国专用节点观看）
-HOST, emby.nexitally.com, Emby
-
-# Exflux专属服
-HOST, line.emby.men, Emby
-
+# > Emby
+DOMAIN-SUFFIX,charontv.com
+DOMAIN-SUFFIX,pornemby.club
+DOMAIN-SUFFIX,kyarucloud.com
+DOMAIN-SUFFIX,embyclub.com
+DOMAIN-SUFFIX,emby.nexitally.com
+DOMAIN-SUFFIX,emby.xeton.dev
+DOMAIN-SUFFIX,line.emby.me
+DOMAIN-SUFFIX,exflux.dev
+DOMAIN-SUFFIX,emby-cf.plusmedia.site
+DOMAIN-SUFFIX,jellyfin.xeton.dev
+DOMAIN-SUFFIX,movie.xeton.dev
+DOMAIN-SUFFIX,emby.plusmedia.site
+DOMAIN-SUFFIX,servers.xeton.dev
+DOMAIN-SUFFIX,play.charontv.com
+DOMAIN-SUFFIX,emby-sg.plusmedia.site
+DOMAIN-SUFFIX,servers.xeton.dev
+DOMAIN-SUFFIX,cf.odysseyplus.site
+DOMAIN-SUFFIX,sg.odysseyplus.site
+DOMAIN-SUFFIX,sg2.odysseyplus.site
+DOMAIN-SUFFIX,ru.odysseyplus.site
+DOMAIN-SUFFIX,sp.odysseyplus.site
+#熊猫影业
+DOMAIN-SUFFIX,aga-jp.embyclub.com
+DOMAIN-SUFFIX,azsgp.embyclub.com
+#跑车
+DOMAIN-SUFFIX,emby.cjpc.cc
+# > 流媒体终点站服务器
+DOMAIN-SUFFIX,pub1.emby.wtf
+DOMAIN-SUFFIX,pub1cm1.emby.wtf
+DOMAIN-SUFFIX,pub2.emby.wtf
+DOMAIN-SUFFIX,pub2cm1.emby.wtf
+DOMAIN-SUFFIX,pub3.emby.wtf
+DOMAIN-SUFFIX,pub3cm1.emby.wtf
+# 卷毛鼠
+DOMAIN-SUFFIX,jmsooo.com
+DOMAIN-SUFFIX,sg1.jmsooo.com
+DOMAIN-SUFFIX,sg2.jmsooo.com
+DOMAIN-SUFFIX,dx1.jmsooo.com
+DOMAIN-SUFFIX,dx2.jmsooo.com
+DOMAIN-SUFFIX,usa1.jmsooo.com
+DOMAIN-SUFFIX,usa2.jmsooo.com
+DOMAIN-SUFFIX,usa3.jmsooo.com
+DOMAIN-SUFFIX,sg1.jmsooo.com
+DOMAIN-SUFFIX,sg2.jmsooo.com
+DOMAIN-SUFFIX,usa1.jmsooo.com
+DOMAIN-SUFFIX,usa2.jmsooo.com
+DOMAIN-SUFFIX,usa3.jmsooo.com
+# > 流媒体Misty服务器
+DOMAIN-SUFFIX,aaa.ax
+DOMAIN-SUFFIX,ru.aaa.ax
+DOMAIN-SUFFIX,us.aaa.ax
+DOMAIN-SUFFIX,emby-jp.ssky.me
