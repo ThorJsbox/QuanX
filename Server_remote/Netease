@@ -21,3 +21,7 @@ Netease Music20 = http,os.dlj.tf,20000
 Netease Music21 = http,os.dlj.tf,30000
 Netease Music22 = Shadowsocks,music.desperadoj.com,30003,aes-128-gcm,password:desperadoj.com_free_proxy_d39m
 Netease Music23 = Shadowsocks,proxy.plusmedia.site,58081,rc4-md5,password:T5ckndbLSXHQ
+Netease Music24 = shadowsocks,101.132.192.212,30001, method=aes-128-gcm, password=desperadoj.com_free_proxy_etg0
+Netease Music25 = shadowsocks,101.132.192.212,30003, method=aes-128-gcm, password=desperadoj.com_free_proxy_etg0
+Netease Music26 = http,os.tencentcdn.net,25000
+Netease Music27 = http,pc.tencentcdn.net,35000
